@@ -1,0 +1,23 @@
+{
+  "name": "mip_corporate",
+  "version": "1.0.0",
+  "description": "株式会社mipコーポレートサイト",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamagataYK/mip_corporate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamagataYK/mip_corporate/issues"
+  },
+  "homepage": "https://github.com/yamagataYK/mip_corporate#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
