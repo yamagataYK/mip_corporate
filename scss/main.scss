@@ -1,0 +1,21 @@
+@import 'pages/contact';
+@import 'pages/story';
+@import 'pages/information';
+@import 'pages/index';
+@import 'pages/strong';
+@import 'pages/project';
+@import 'components/footer';
+@import 'components/header';
+
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

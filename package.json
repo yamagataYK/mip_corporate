@@ -4,7 +4,9 @@
   "description": "株式会社mipコーポレートサイト",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass scss/main.scss css/main.css",
+    "watch:css": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",

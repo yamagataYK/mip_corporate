@@ -1,0 +1,113 @@
+footer {
+    margin-top: 170px;
+
+    nav {
+        padding: 0 5%;
+    }
+}
+
+.footer_wrap {
+    display: grid;
+    grid-template-columns:
+        minmax(200px, 1fr) repeat(4, 1fr);
+    width: 100%;
+    gap: 5rem;
+    padding: 40px 0;
+}
+
+.col_logo {
+    display: flex;
+    margin-right: 20px;
+    width: 100%;
+
+    p {
+        color: #005EA5;
+        font-size: 1.6rem;
+        background: #F6FDFF;
+        padding: 10px 20px;
+        box-shadow: 1px 4px 4.1px 0px rgba(60, 167, 205, 0.25);
+        margin-top: 40px;
+        width: 200px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 265px;
+        height: 68px;
+        color: #fff;
+        font-size: 2.4rem;
+        border: none;
+        border-radius: 40px;
+        background: linear-gradient(to right, #4D7BB3, #51A2C3, #56C8D2, #58E1DD);
+        margin-top: 40px;
+
+        &::before {
+            display: inline-block;
+            content: "";
+            width: 33px;
+            height: 33px;
+            background-image: url("../img/mail.png");
+            background-size: cover;
+        }
+    }
+}
+
+.col_group {
+    display: contents;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 30px;
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    ul {
+        li {
+            padding-top: 40px;
+
+            a {
+                color: #000;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-top: 110px;
+    margin-bottom: 20px;
+
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 25px 20px;
+
+    p {
+        font-size: 1.6rem;
+
+        &:last-child {
+            line-height: 1;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.banner {
+    width: 100%;
+    height: 200px;
+    background: (linear-gradient(90deg, #2290FF 0%, #7DBCFA 63.94%, #B9DBFF 100%));
+
+    &__title {
+        color: #fff;
+        font-size: 4rem;
+        font-weight: bold;
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+}
+
+.OverviewWrap {
+    padding: 40px 10px;
+
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 5px 30px;
+    }
+
+    &__subhead {
+        font-size: 20px;
+        color: #666;
+        margin: 0 0 10px 30px;
+    }
+
+
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding-top: 30px;
+    }
+
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    &__table th,
+    &__table td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #ddd;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    &__table th {
+        width: 25%;
+        color: #333;
+        font-weight: normal;
+    }
+
+
+    &__image {
+        flex-shrink: 0;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    &__image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+}

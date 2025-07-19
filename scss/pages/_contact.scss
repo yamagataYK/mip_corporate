@@ -1,0 +1,77 @@
+.banner {
+    width: 100%;
+    height: 200px;
+    background: (linear-gradient(90deg, #2290FF 0%, #7DBCFA 63.94%, #B9DBFF 100%));
+
+    &__title {
+        color: #fff;
+        font-size: 4rem;
+        font-weight: bold;
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+}
+
+.contactWrap {
+    width: 1000px;
+    height: 1600px;
+    border-radius: 42px;
+    background: #0766AD;
+    margin: 100px auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    #label {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    span {
+        color: #FF0505;
+        font-size: 20px;
+    }
+
+    .contact__input {
+        width: 840px;
+        height: 80px;
+        margin: 10px 0 0 10px;
+        padding-left: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+        display: flex;
+    }
+
+    .detail__input {
+        width: 840px;
+        height: 240px;
+        margin: 10px 0 0 20px;
+        font-size: 24px;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+        display: flex;
+    }
+}
+
+.privacy-consent {
+    text-align: center;
+
+    .privacy-consent__notice {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .privacy-consent__input {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .privacy-consent__label {
+        font-size: 20px;
+        color: #fff;
+    }
+}
