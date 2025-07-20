@@ -135,16 +135,16 @@
 
 .OverviewWrap {
   padding: 40px 10px;
+  margin-left: 30px;
 }
 .OverviewWrap h2 {
   font-size: 30px;
   font-weight: bold;
-  margin: 0 0 5px 30px;
 }
 .OverviewWrap__subhead {
   font-size: 20px;
   color: #666;
-  margin: 0 0 10px 30px;
+  margin-bottom: 20px;
 }
 .OverviewWrap__content {
   display: flex;
@@ -180,6 +180,131 @@
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   object-fit: cover;
+}
+
+.accessWrap {
+  padding: 40px 10px;
+  margin-left: 30px;
+}
+.accessWrap h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.accessWrap__subhead {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.accessWrap__content {
+  margin: 30px;
+}
+.accessWrap__text {
+  font-size: 18px;
+}
+
+.historyWrap {
+  padding: 40px 10px;
+  margin-left: 30px;
+}
+.historyWrap h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.historyWrap__subhead {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.historyWrap__content {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+.historyWrap__content img {
+  display: inline-block;
+  width: auto;
+  max-width: none;
+  height: auto;
+}
+.historyWrap__time {
+  display: flex;
+  gap: 30px;
+}
+.historyWrap__timeEvent {
+  font-size: 16px;
+  padding-right: 10px;
+  border-right: #2290FF dotted 1px;
+}
+.historyWrap__month {
+  color: #51BAFF;
+}
+
+.customerWrap {
+  padding: 40px 10px;
+  margin-left: 30px;
+}
+.customerWrap h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.customerWrap__subhead {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.customerWrap__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.customerWrap__text span {
+  color: #2290FF;
+  font-size: 18px;
+}
+
+.securityWrap {
+  background-color: #D7E7FF;
+  height: auto;
+  padding-bottom: 30px;
+}
+.securityWrap h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding: 40px 10px 0;
+  margin-left: 30px;
+}
+.securityWrap__subhead {
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  margin-left: 30px;
+}
+.securityWrap__text {
+  width: 100%;
+  padding-left: 200px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.securityWrap__promise {
+  font-size: 16px;
+  padding-left: 240px;
+}
+.securityWrap__item {
+  font-size: 16px;
+  padding-left: 230px;
+  line-height: 50px;
+}
+.securityWrap__item span {
+  background-color: #2290FF;
+  color: #fff;
+  padding: 2px;
+  margin-right: 8px;
 }
 
 footer {

@@ -14,18 +14,18 @@
 
 .OverviewWrap {
     padding: 40px 10px;
+    margin-left: 30px;
 
 
     h2 {
         font-size: 30px;
         font-weight: bold;
-        margin: 0 0 5px 30px;
     }
 
     &__subhead {
         font-size: 20px;
         color: #666;
-        margin: 0 0 10px 30px;
+        margin-bottom: 20px;
     }
 
 
@@ -70,5 +70,157 @@
         border-radius: 16px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         object-fit: cover;
+    }
+}
+
+.accessWrap {
+    padding: 40px 10px;
+    margin-left: 30px;
+
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &__subhead {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+
+    &__content {
+        margin: 30px;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+}
+
+.historyWrap {
+    padding: 40px 10px;
+    margin-left: 30px;
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &__subhead {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 20px;
+
+    }
+
+    &__content {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    &__content img {
+        display: inline-block;
+        width: auto;
+        max-width: none;
+        height: auto;
+    }
+
+    &__time {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    &__timeEvent {
+        font-size: 16px;
+        padding-right: 10px;
+        border-right: #2290FF dotted 1px;
+    }
+
+    &__month {
+        color: #51BAFF;
+    }
+}
+
+.customerWrap {
+    padding: 40px 10px;
+    margin-left: 30px;
+
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &__subhead {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+
+        span {
+            color: #2290FF;
+            font-size: 18px;
+        }
+    }
+}
+
+.securityWrap {
+    background-color: #D7E7FF;
+    height: auto;
+    padding-bottom: 30px;
+
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        padding: 40px 10px 0;
+        margin-left: 30px;
+    }
+
+    &__subhead {
+        font-size: 20px;
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+        padding: 0 10px;
+        margin-left: 30px;
+    }
+
+    &__text {
+        width: 100%;
+        padding-left: 200px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+    }
+
+    &__promise {
+        font-size: 16px;
+        padding-left: 240px;
+    }
+
+    &__item {
+        font-size: 16px;
+        padding-left: 230px;
+        line-height: 50px;
+
+        span {
+            background-color: #2290FF;
+            color: #fff;
+            padding: 2px;
+            margin-right: 8px;
+        }
     }
 }
