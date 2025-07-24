@@ -1,59 +1,379 @@
-.title {
-    text-align: center;
-    letter-spacing: 0.1em;
-
-    h1 {
-        font-size: 3.2rem;
-        font-weight: bold;
-        color: #FFFFFF;
-        margin-top: 5rem;
-    }
-
-    p {
-        font-size: 2rem;
-        color: #FFFFFF;
-        margin-bottom: 2rem;
-    }
+.container {
+  background: linear-gradient(135deg, #2290ff, #7dbcfa, #b9dbff);
+  height: 940px;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
+.title {
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5rem;
+  }
+
+  p {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}
+
+.menu__btn {
+  width: 60px;
+  height: 60px;
+  float: right;
+  bottom: 100px;
+  right: 20px;
+  position: relative;
+  z-index: 1100;
+
+  span {
+    width: 45px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    transition: 1s;
+  }
+
+  span:nth-child(1) {
+    top: 20px;
+  }
+
+  span:nth-child(2) {
+    top: 30px;
+  }
+
+  span:nth-child(3) {
+    top: 40px;
+  }
+}
+
+.menu__btn.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu__btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu__btn.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.menu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 81, 159, 0.85) url('/path/to/背景画像.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  z-index: 1000;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu__list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    .menu__item {
+      margin: 1rem 0;
+
+      a {
+        display: block;
+        color: #fff;
+        font-size: 2.5rem;
+        text-decoration: none;
+        line-height: 1.2;
+
+        .sub {
+          display: block;
+          font-size: 1rem;
+          opacity: .7;
+        }
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+
+
 .imgWrap {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
 
-    &__step1-image {
-        width: 500px;
-        height: auto;
-    }
+  &__step1-image,
+  &__step2-image,
+  &__step3-image,
+  &__step4-image {
+    width: 320px;
+    height: auto;
+  }
 
-    &__step2-image {
-        width: 360px;
-        height: auto;
-    }
-
-    &__step3-image {
-        width: 360px;
-        height: auto;
-    }
-
-    &__step4-image {
-        width: 400px;
-        height: auto;
-    }
+  &__step1-image,
+  &__step4-image {
+    width: 360px;
+  }
 }
 
 .step-item {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+  }
+
+  img {
+    filter: brightness(0.4);
+    transition: all 0.4s ease;
+  }
+
+  &:hover img {
+    filter: brightness(1);
+    transform: translateY(-10px);
+  }
+}
+
+// モーダル全体
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+  background-color: #fff;
+  animation: zoomIn 0.8s ease-out forwards;
+
+  &.visible {
+    display: flex;
+  }
+}
+
+
+
+.modal__content {
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.modal__hero {
+  position: relative;
+  width: 100%;
+  height: 960px;
+  background: #000;
+
+  img {
+    width: 100%;
+    height: 960px;
+    object-fit: cover;
+  }
+
+  .modal__hero-text {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    color: #fff;
+    max-width: 700px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+
+    h2 {
+      font-size: 5.4rem;
+      color: #2290ff;
+      text-shadow: 0 4px 4px rgba(14, 34, 255, 0.25);
+
+    }
+
+    #modalDescription {
+      font-size: 3rem;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      color: #000;
+      margin-bottom: 4rem;
+    }
+
+    .voiceWrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .voiceContents {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          width: 100px;
+          font-size: 1.6rem;
+          color: #000;
+        }
+
+        .modal__voice {
+          font-size: 2.4rem;
+          color: #000;
+          text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+}
+
+.modal__story {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2290ff, #7dbcfa, #b9dbff);
+}
+
+.story-section {
+  max-width: 1000px;
+  margin: 0 auto 120px;
+  opacity: 0;
+  transition: all 0.8s ease;
+  background: #f9fbfd;
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+  &.visible {
+    opacity: 1;
+  }
+
+
+  p {
+    font-size: 1.7rem;
+    line-height: 1.9;
+    color: #333;
+  }
+
+  &--left {
+    transform: translateX(-60px);
+
+    &.visible {
+      transform: translateX(0);
+    }
+  }
+
+  &--right {
+    transform: translateX(60px);
+    text-align: right;
+
+    &.visible {
+      transform: translateX(0);
+    }
+  }
+
+  &--fade {
+    transform: translateY(40px);
+
+    &.visible {
+      transform: translateY(0);
+    }
+  }
+}
+
+//モーダルの中身
+.story-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .story-text {
+    flex: 1;
+
+    h3 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      color: #2290ff;
+      text-shadow: 0 3px 3px rgba(14, 34, 255, 0.25);
+    }
 
     p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 32px;
-        font-weight: bold;
-        z-index: 10px;
-        color: #333;
+      font-size: 2rem;
+      line-height: 1.8;
+
     }
+
+    span {
+      color: tomato;
+    }
+  }
+
+  .story-image {
+    flex: 1;
+    width: auto;
+    height: 400px;
+    background-position: center;
+    border-radius: 20px;
+  }
+}
+
+// ボタンなど
+.modal__close-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: #ececec;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10000;
+
+  &:hover {
+    background: #fff;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

@@ -12,7 +12,8 @@ footer {
         minmax(200px, 1fr) repeat(4, 1fr);
     width: 100%;
     gap: 5rem;
-    padding: 40px 0;
+    padding: 40px 30px;
+
 }
 
 .col_logo {
@@ -30,7 +31,7 @@ footer {
         width: 200px;
     }
 
-    button {
+    a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,6 +80,7 @@ footer {
         }
     }
 }
+
 
 .footer_info {
     display: flex;

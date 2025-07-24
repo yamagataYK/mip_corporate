@@ -2,103 +2,82 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <title>ステップストーリー</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>ステップストーリー</title>
 </head>
 
-<body>
-    <div class="title">
-        <h1>私たちの仕事、4つの物語</h1>
-        <p>お客様の成功をデザインする、私たちのプロセス</p>
-    </div>
-    <div class="imgWrap">
-        <div class="step-item">
-            <a href="hearing.html">
-                <img src="./img/step1.jpg" alt="ヒアリング写真" class="imgWrap__step1-image img">
-            </a>
-            <p>ヒアリング</p>
-        </div>
-        <div class="step-item">
-            <a href="planning.html">
-                <img src="./img/step2.jpg" alt="企画写真" class="imgWrap__step2-image img">
-            </a>
-            <p>企画</p>
-        </div>
-        <div class="step-item">
-            <a href="production.html">
-                <img src="./img/step3.jpg" alt="制作写真" class="imgWrap__step3-image img">
-            </a>
-            <p>政策</p>
-        </div>
-        <div class="step-item">
-            <a href="operation.html">
-                <img src="./img/step4.jpg" alt="運用写真" class="imgWrap__step4-image img">
-            </a>
-            <p>運用</p>
-        </div>
-    </div>
-    <footer>
-        <div class="footer_wrap">
-            <div class="col col_logo">
-                <img src="img/logo.png" alt="MIP ロゴ">
-                <p>ミップへは下記よりお気軽にお問い合わせください。</p>
-                <button type="button">お問い合わせ</button>
-            </div>
-            <nav class="col_group_wrap col_group">
-                <div class="col">
-                    <h4>トップページ</h4>
-                    <ul>
-                        <li><a href="#">MIPの強み</a></li>
-                        <li><a href="#">事例紹介（実績）</a></li>
-                        <li><a href="#">お知らせ</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>会社案内</h4>
-                    <ul>
-                        <li><a href="#">会社概要</a></li>
-                        <li><a href="#">アクセスマップ</a></li>
-                        <li><a href="#">会社沿革</a></li>
-                        <li><a href="">主な取引先</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>MIPの強み</h4>
-                    <ul>
-                        <li><a href="#">MIPの強み</a></li>
-                        <li><a href="#">事例紹介</a></li>
-                        <li><a href="#">お知らせ</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>事業内容</h4>
-                    <ul>
-                        <li><a href="#">MIPの強み</a></li>
-                        <li><a href="#">事例紹介</a></li>
-                        <li><a href="#">お知らせ</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="footer_info">
-            <p>新着情報</p>
-            <p>サイトポリシー</p>
-            <p>個人情報の保護に関して</p>
-            <p>サイトマップ</p>
-        </div>
-        <div class="address">
-            <p>Copyright 2001-2024 MIP Co.,Ltd.</p>
-            <p>TEL 06-6486-3280 FAX06-6486-3281</p>
-            <p>
-                〒531-0072<br>
-                大阪市北区豊崎３丁目１９番３号ピアスタワー１６Ｆ
-            </p>
-        </div>
-    </footer>
+<body class="container">
+  <div class="title">
+    <h1>私たちの仕事、4つの物語</h1>
+    <p>お客様の成功をデザインする、私たちのプロセス</p>
+  </div>
+  <div class="menu__btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="menu__overlay">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="./index.html">トップページ<span class="sub">Top</span></a></li>
+      <li class="menu__item"><a href="./information.html">会社案内<span class="sub">Company Profile</span></a></li>
+      <li class="menu__item"><a href="./strong.html">MIPの強み<span class="sub">Strengths</span></a></li>
+      <li class="menu__item"><a href="./project.html">事業内容<span class="sub">Solution</span></a></li>
+      <li class="menu__item"><a href="./contact.html">お問い合わせ<span class="sub">Contact</span></a></li>
+    </ul>
+  </div>
 
+  <div class="imgWrap">
+    <div class="step-item" data-step="ヒアリング">
+      <img src="./img/step1.png" alt="ヒアリング写真" class="imgWrap__step1-image img" />
+      <p>ヒアリング</p>
+    </div>
+    <div class="step-item" data-step="企画">
+      <img src="./img/step2.jpg" alt="企画写真" class="imgWrap__step2-image img" />
+      <p>企画</p>
+    </div>
+    <div class="step-item" data-step="制作">
+      <img src="./img/step3.jpg" alt="制作写真" class="imgWrap__step3-image img" />
+      <p>制作</p>
+    </div>
+    <div class="step-item" data-step="運用">
+      <img src="./img/step4.jpg" alt="運用写真" class="imgWrap__step4-image img" />
+      <p>運用</p>
+    </div>
+  </div>
+
+  <!-- モーダル全体 -->
+  <div id="fullscreenModal" class="modal hidden">
+    <button id="closeModal" class="modal__close-button">✕</button>
+
+    <div class="modal__content">
+
+      <section class="modal__hero">
+        <img id="fullscreenImage" src="" alt="ステップ画像" />
+        <div class="modal__hero-overlay">
+          <div class="modal__hero-text">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="voiceWrap">
+              <img src="./img/user.png" alt="">
+              <div class="voiceContents">
+                <p>お客様の声</p>
+                <div class="modal__voice" id="modalVoice"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="modal__story" id="modalScrollContent">
+
+      </section>
+    </div>
+  </div>
+  <script src="js/story.js"></script>
 </body>
 
 </html>
