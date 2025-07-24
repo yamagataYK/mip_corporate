@@ -577,6 +577,36 @@
   padding: 2px;
   margin-right: 8px;
 }
+.securityWrap__text-end {
+  font-size: 16px;
+  text-align: end;
+  margin-right: 40px;
+}
+.securityWrap__system {
+  color: #2290FF;
+  font-size: 16px;
+  padding-left: 230px;
+  margin-bottom: 10px;
+}
+.securityWrap__system-text {
+  color: #000;
+  font-size: 16px;
+  padding-left: 230px;
+  margin-bottom: 20px;
+}
+.securityWrap__security {
+  display: flex;
+  padding-left: 230px;
+  gap: 80px;
+}
+.securityWrap__security p {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.securityWrap__security p span {
+  color: #2290FF;
+}
 
 .main-visual {
   position: relative;

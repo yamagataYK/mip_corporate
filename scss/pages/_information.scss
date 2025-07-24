@@ -223,4 +223,40 @@
             margin-right: 8px;
         }
     }
+
+    &__text-end {
+        font-size: 16px;
+        text-align: end;
+        margin-right: 40px;
+    }
+
+    &__system {
+        color: #2290FF;
+        font-size: 16px;
+        padding-left: 230px;
+        margin-bottom: 10px;
+
+        &-text {
+            color: #000;
+            font-size: 16px;
+            padding-left: 230px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__security {
+        display: flex;
+        padding-left: 230px;
+        gap: 80px;
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 2px;
+
+            span {
+                color: #2290FF;
+            }
+        }
+    }
 }
